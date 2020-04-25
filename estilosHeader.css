@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+}
+
+body{
+	padding:0px;
+	background-attachment: fixed;
+	background-color:#111;
+	background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
+	background-size: cover;
+   	background-position: center center;
+}
+
+.large-header {
+   position: relative;
+   width: 100%;
+   overflow: hidden;
+   z-index:1;
+}
+
+#bloqueCentral{
+   position: absolute;
+   width: 1024px;
+   height: 2048px;
+   top:200px;
+   background-color: #58535c;
+   z-index:2;
+}
+
+#cabecera{
+   position: absolute;
+   width: 100%;
+   height:512px;
+   top:0px;
+   background-color: red;
+   
+   border-top-width: 10px;
+   border-right-width:  10px;
+   border-bottom-width: 10px;
+   border-left-width: 10px;
+   
+   border-top-color: white;
+   border-right-color:  white;
+   border-bottom-color: white;
+   border-left-color: white;
+}
+
+#bloqueIzquierdo{
+   position: absolute;
+   left:0px;
+   width: 50%;
+   height:1536px;
+   top: 512px;
+   background-color: blue;
+   
+   border-top-width: 10px;
+   border-right-width:  10px;
+   border-bottom-width: 10px;
+   border-left-width: 10px;
+   
+   border-top-color: white;
+   border-right-color:  white;
+   border-bottom-color: white;
+   border-left-color: white;
+   
+}
+
+#bloqueDerecho{
+   position: absolute;
+   right: 0px;
+   width: 50%;
+   height:1536px;
+   top: 512px;
+   background-color: green;
+   
+   border-top-width: 10px;
+   border-right-width:  10px;
+   border-bottom-width: 10px;
+   border-left-width: 10px;
+   
+   border-top-color: white;
+   border-right-color:  white;
+   border-bottom-color: white;
+   border-left-color: white;
+}
+
+.main-title {
+   position: absolute;
+   margin: 0;
+   padding: 0;
+   color: #F9F1E9;
+   text-align: center;
+   top: 100px;
+   left: 50%;
+   -webkit-transform: translate3d(-50%, -50%, 0);
+   transform: translate3d(-50%, -50%, 0);
+}
+
+.demo .main-title {
+   text-transform: uppercase;
+   font-size: 4.2em;
+   letter-spacing: 0.1em;
+}
+
+.main-title .thin {
+   font-weight: 200;
+}
+#avatar{
+	float: left;
+	left: 0px;
+	top: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+   .demo .main-title {
+      font-size: 3em;
+   }
+}
+
+@media only screen and (max-height: 1824px) {
+   body{
+    padding:0px;
+	background-attachment: fixed;
+	background-color:#111;
+	background-size: cover;
+   	background-position: center center;
+   }
+}
